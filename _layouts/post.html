@@ -13,15 +13,31 @@ layout: default
   <h2>Related posts</h2>
   <ul class="related-posts">
     {% for post in site.related_posts limit:3 %}
-      <li>
-        <h3>
-          <a href="{{ site.baseurl }}{{ post.url }}">
-            {{ post.title }}
-            <small>{{ post.date | date_to_string }}</small>
-          </a>
-        </h3>
-      </li>
+    <li>
+      <h3>
+        <a href="{{ site.baseurl }}{{ post.url }}">
+          {{ post.title }}
+          <small>{{ post.date | date_to_string }}</small>
+        </a>
+      </h3>
+    </li>
     {% endfor %}
   </ul>
 </div>
 {% endif %}
+
+<script src="https://giscus.app/client.js" 
+  data-repo="haha454/haha454.github.io" 
+  data-repo-id="R_kgDOJyikjg"
+  data-category="General" 
+  data-category-id="DIC_kwDOJyikjs4CXYmQ" 
+  data-mapping="title" 
+  data-strict="1"
+  data-reactions-enabled="1" 
+  data-emit-metadata="0" 
+  data-input-position="top" 
+  data-theme="preferred_color_scheme"
+  data-lang="en" 
+  crossorigin="anonymous" 
+  async>
+</script>
